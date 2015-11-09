@@ -1,4 +1,3 @@
-
 package com.mycompany.guava.base;
 
 import com.google.common.base.CaseFormat;
