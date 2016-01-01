@@ -18,14 +18,13 @@ public class Collections2Example {
         // Filter using collection utils
         List<String> strings = Lists.newArrayList(null, "www", null, "leveluplunch", "com", null);
 
-        Collection<String> filterStrings = Collections2.filter(
-                strings, new Predicate<String>() {
+        Collection<String> filterStrings = Collections2.filter(strings, new Predicate<String>() {
 
-                    @Override
-                    public boolean apply(final String input) {
-                        return (input != null) && (input.length() >= 3);
-                    }
-                });
+            @Override
+            public boolean apply(final String input) {
+                return (input != null) && (input.length() >= 3);
+            }
+        });
         System.out.println(filterStrings);
 
         // Permutation
